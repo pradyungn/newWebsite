@@ -150,6 +150,7 @@ export default () => {
           height:100%;
           background-color: #282a36;
           color: #f8f8f2;
+          margin: 0;
       }
       .socials{
         height: 23px;
