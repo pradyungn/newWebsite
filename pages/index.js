@@ -231,12 +231,12 @@ export default () => {
 
       @media (max-width: 750px){
         .frame {
-          width: 400px;
-          height: 650px;
+          width: 350px;
+          height: 550px;
 
           position: absolute;
-          left: calc(50% - 400px/2 + 0.5px);
-          top: calc(50% - 650px/2 + 0.5px);
+          left: calc(50% - 350px/2 + 0.5px);
+          top: calc(50% - 550px/2 + 0.5px);
         }
       }
 
