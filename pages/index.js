@@ -67,13 +67,13 @@ export default () => {
 
           <div className="buttons">
             <Link href="/blog">
-              <div className="button" style={{marginBottom: "15px"}}>
+              <div className="button bgap">
                 <div className="btext">Blog</div>
               </div>
             </Link>
 
             <Link href="/static/Resume.pdf">
-              <div className="button" style={{marginBottom: "15px"}}>
+              <div className="button bgap">
                 <div className="btext">Resume</div>
               </div>
             </Link>
@@ -205,8 +205,8 @@ export default () => {
       
       @media (max-width: 750px){
         .me {
-          top: 50px;
-          left: 125px;
+          top: 10px;
+          left: 75px;
         }
       }
 
@@ -253,10 +253,10 @@ export default () => {
       @media (max-width: 750px){
         .right {
           position: absolute;
-          width: 340px;
+          width: 250px;
           height: 210px;
-          left: 100px;
-          top: 285px;
+          left: 50px;
+          top: 230px;
         }
       }
 
@@ -270,10 +270,24 @@ export default () => {
         align-items: center;
         justify-content: center;
         position: absolute;
-        width: 250px;
-        height: 205px;
-        left: 0px;
-        top: 0px;
+      }
+
+      @media (min-width: 750px){
+        .quoteBox {
+          width: 250px;
+          height: 205px;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      @media (max-width: 750px){
+        .quoteBox {
+          width: 250px;
+          height: 100px;
+          left: 0px;
+          top: 0px;
+        }
       }
 
       .quotext {
@@ -290,7 +304,7 @@ export default () => {
       @media (min-width: 750px){
         .buttons {
           width: 110px;
-          height: 200px;
+          height: 180px;
           left: 265px;
           top: 0px;
         }
@@ -300,7 +314,7 @@ export default () => {
         .buttons {
           width: 250px;
           height: 150px;
-          top: 220px;
+          top: 110px;
         }
       }
 
@@ -319,6 +333,18 @@ export default () => {
 
         cursor: pointer;
         transition: ease 300ms;
+      }
+
+      @media (min-width: 750px){
+        .button {
+          margin-bottom: 15px;
+        }
+      }
+
+      @media (max-width: 750px){
+        .button {
+          margin-bottom: 7.5px;
+        }
       }
 
       .button:hover {
@@ -437,22 +463,23 @@ export default () => {
       @media (max-width: 750px){
         .blurb-1 {
           position: absolute;
-          top: 100px;
-          left: 600px;
+          top: 30px;
+          left: 395px;
+          width: 20em;
         }
 
         .blurb-2 {
           position: absolute;
-          top: 130px;
-          left: 1045px;
-          width: 158px
+          top: 30px;
+          left: 785px;
+          width: 10em;
         }
 
         .blurb-3 {
           position: absolute;
-          top: 190px;
-          left: 1475px;
-          width: 187px;
+          top: 105px;
+          left: 1115px;
+          width: 12em;
         }
       }
 
@@ -480,11 +507,11 @@ export default () => {
 
       @media (max-width: 750px){
         .box-1 {
-          width: 350px;
+          width: 300px;
           height: 375px;
 
-          top: 210px;
-          left: 495px;
+          top: 100px;
+          left: 367px;
         }
       }
 
@@ -513,11 +540,11 @@ export default () => {
 
       @media (max-width: 750px){
         .box-2 {
-          width: 350px;
+          width: 300px;
           height: 375px;
 
-          top: 210px;
-          left: 940px;
+          top: 100px;
+          left: 710px;
         }
       }
 
@@ -545,11 +572,11 @@ export default () => {
 
       @media (max-width: 750px){
         .box-3 {
-          width: 350px;
-          height: 225px;
+          width: 300px;
+          height: 200px;
 
-          top: 270px;
-          left: 1385px;
+          top: 165px;
+          left: 1055px;
         }
       }
 
@@ -579,11 +606,11 @@ export default () => {
 
       @media (max-width: 750px){
         .final {
-          width: 350px;
+          width: 300px;
           height: 50px;
 
-          top: 510px;
-          left: 1385px;
+          top: 375px;
+          left: 1055px;
         }
       }
 
@@ -596,8 +623,8 @@ export default () => {
 
       @media (max-width: 750px){
         .boxtext {
-          width: 300px;
-          font-size: 18px;
+          width: 250px;
+          font-size: 16px;
         }
       }
 
