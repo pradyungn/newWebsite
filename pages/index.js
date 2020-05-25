@@ -1,3 +1,14 @@
+//  ____  _   _ 
+// |  _ \| \ | | Pradyun Narkadamilli
+// | |_) |  \| | https://pradyungn.tech
+// |  __/| |\  | MIT License
+// |_|   |_| \_| Copyright 2020 Pradyun Narkadamilli
+
+// Main page of my website. CSS is contained within a JSX tag at the bottom for now, will work on making it omore modular in the future.
+
+// Vim Notes:
+// Marks for j (javascript) and c (css)
+
 import Link from 'next/link'
 import React, {useState} from 'react'
 import { FaTwitter, FaGithubAlt, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
