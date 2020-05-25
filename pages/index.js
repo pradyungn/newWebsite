@@ -54,7 +54,6 @@ export default () => {
             <div className="social"><FaTwitter size="12px" className="icon" /></div>
           </a>
         </div>
-
         </div>
 
         <div className="right">
@@ -96,8 +95,8 @@ export default () => {
 
         <div className="box-1">
           <div className="boxtext">
-            <p>I'm a 16 year old Junior at Dougherty Valley High School. I've been programming for over 7 years, with experience in a variety of languages and tools. </p>
-            <p>I view programming as not only my craft, but my hobby. The very thing that wakes me up in the morning, and keeps me up at night. I especially enjoy applications that not only serve a purpose, but bring joy to those around me.</p>
+            <p>I'm a 16 year old Junior at Dougherty Valley High School. I've been programming for over 7 years, and am self-taught. I view programming as not only my craft, but my hobby. The very thing that wakes me up in the morning, and keeps me up at night.</p>
+            <p>While I specialize in back-end development, I do mobile and web development as well. I am fluent in more than 8 languages, and am experienced with tools like Tensorflow, React, Flask/Django, etc.</p>
           </div>
         </div>
       </Slide>
@@ -163,6 +162,7 @@ export default () => {
           color: #f8f8f2;
           margin: 0;
       }
+
       .socials{
         height: 23px;
 
@@ -194,18 +194,23 @@ export default () => {
       .me {
         position: absolute;
         text-align: center;
-        top: 90px;
-        left: 55px;
+      }
+
+      @media (min-width: 750px){
+        .me {
+          top: 90px;
+          left: 55px;
+        }
       }
       
+      @media (max-width: 750px){
+        .me {
+          top: 50px;
+          left: 125px;
+        }
+      }
 
       .frame {
-        width: 750px;
-        height: 450px;
-        position: absolute;
-        left: calc(50% - 750px/2 + 0.5px);
-        top: calc(50% - 450px/2 + 0.5px);
-
         background: #282A36;
         border: 3px solid #FF79C6;
         box-sizing: border-box;
@@ -213,21 +218,49 @@ export default () => {
         overflow: hidden;
       }
 
-      .right {
-        position: absolute;
-        width: 340px;
-        height: 210px;
-        left: 300px;
-        top: 100px;
+      @media (min-width: 750px){
+        .frame {
+          width: 750px;
+          height: 450px;
+
+          position: absolute;
+          left: calc(50% - 750px/2);
+          top: calc(50% - 450px/2);
+        }
+      }
+
+      @media (max-width: 750px){
+        .frame {
+          width: 450px;
+          height: 750px;
+
+          position: absolute;
+          left: calc(50% - 450px/2 + 0.5px);
+          top: calc(50% - 750px/2 + 0.5px);
+        }
+      }
+
+      @media (min-width: 750px){
+        .right {
+          position: absolute;
+          width: 340px;
+          height: 210px;
+          left: 300px;
+          top: 100px;
+        }
+      }
+
+      @media (max-width: 750px){
+        .right {
+          position: absolute;
+          width: 340px;
+          height: 210px;
+          left: 100px;
+          top: 285px;
+        }
       }
 
       .quoteBox {
-        position: absolute;
-        width: 250px;
-        height: 205px;
-        left: 0px;
-        top: 0px;
-
         background: #282A36;
         border: 2.25px solid #BD93F9;
         box-sizing: border-box;
@@ -236,6 +269,11 @@ export default () => {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        width: 250px;
+        height: 205px;
+        left: 0px;
+        top: 0px;
       }
 
       .quotext {
@@ -244,13 +282,26 @@ export default () => {
 
       .buttons {
         position: absolute;
-        width: 110px;
-        height: 200px;
-        left: 265px;
-        top: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+      }
+
+      @media (min-width: 750px){
+        .buttons {
+          width: 110px;
+          height: 200px;
+          left: 265px;
+          top: 0px;
+        }
+      }
+
+      @media (max-width: 750px){
+        .buttons {
+          width: 250px;
+          height: 150px;
+          top: 220px;
+        }
       }
 
       .button {
@@ -273,8 +324,13 @@ export default () => {
       .button:hover {
         background: #1e1f29;
         border-color: #ff79c6;
-        box-shadow: 5px 5px 2px #44475a;
-        transform:translate(-5px, -5px)
+      }
+
+      @media (min-width: 750px){
+        .button:hover {
+          box-shadow: 5px 5px 2px #44475a;
+          transform:translate(-5px, -5px)
+        }
       }
 
       .btext{
@@ -328,52 +384,80 @@ export default () => {
         position: absolute;
         width: 165px;
         height: 30px;
-        left: 290px;
-        bottom: 15px;
         display: flex;
         justify-content: space-between;
+        left: calc(50% - 165px/2);
+        bottom: 15px;
       }
 
       .slide {
-        width: 750px;
-        height: 400px;
         flex-shrink:0;
+      }
+
+      @media (min-width: 750px){
+        .slide {
+          width: 750px;
+          height: 400px;
+        }
       }
       
       .deck {
         display:flex;
         transition: transform 500ms ease;
-        width: 750px;
-        height: 450px;
+      }
+
+      @media (min-width: 750px){
+        .deck{
+          width: 750px;
+          height: 450px;
+        }
       }
 
 
-      .blurb-1 {
-        position: absolute;
-        top: 165px;
-        left: 805px;
+      @media (min-width: 750px){
+        .blurb-1 {
+          position: absolute;
+          top: 165px;
+          left: 805px;
+        }
+
+        .blurb-2 {
+          position: absolute;
+          top: 165px;
+          left: 1555px;
+        }
+
+        .blurb-3 {
+          position: absolute;
+          top: 165px;
+          left: 2305px;
+        }
       }
 
-      .blurb-2 {
-        position: absolute;
-        top: 165px;
-        left: 1555px;
-      }
+      @media (max-width: 750px){
+        .blurb-1 {
+          position: absolute;
+          top: 100px;
+          left: 600px;
+        }
 
-      .blurb-3 {
-        position: absolute;
-        top: 165px;
-        left: 2305px;
+        .blurb-2 {
+          position: absolute;
+          top: 130px;
+          left: 1045px;
+          width: 158px
+        }
+
+        .blurb-3 {
+          position: absolute;
+          top: 190px;
+          left: 1475px;
+          width: 187px;
+        }
       }
 
       .box-1 {
         position: absolute;
-        width: 480px;
-        height: 250px;
-
-        top: 75px;
-        left: 975px;
-
         background: #282A36;
         border: 2.25px solid #50fa7b;
         box-sizing: border-box;
@@ -384,13 +468,28 @@ export default () => {
         justify-content: center;
       }
 
+      @media (min-width: 750px){
+        .box-1 {
+          width: 480px;
+          height: 250px;
+
+          top: 75px;
+          left: 975px;
+        }
+      }
+
+      @media (max-width: 750px){
+        .box-1 {
+          width: 350px;
+          height: 375px;
+
+          top: 210px;
+          left: 495px;
+        }
+      }
+
       .box-2 {
         position: absolute;
-        width: 480px;
-        height: 250px;
-
-        top: 75px;
-        left: 1725px;
 
         background: #282A36;
         border: 2.25px solid #ff5555;
@@ -402,14 +501,28 @@ export default () => {
         justify-content: center;
       }
 
+      @media (min-width: 750px){
+        .box-2 {
+          width: 480px;
+          height: 250px;
+
+          top: 75px;
+          left: 1725px;
+        }
+      }
+
+      @media (max-width: 750px){
+        .box-2 {
+          width: 350px;
+          height: 375px;
+
+          top: 210px;
+          left: 940px;
+        }
+      }
+
       .box-3 {
         position: absolute;
-        width: 480px;
-        height: 150px;
-
-        top: 100px;
-        left: 2475px;
-
         background: #282A36;
         border: 2.25px solid #f1fa8c;
         box-sizing: border-box;
@@ -420,13 +533,28 @@ export default () => {
         justify-content: center;
       }
 
+      @media (min-width: 750px){
+        .box-3 {
+          width: 480px;
+          height: 150px;
+
+          top: 100px;
+          left: 2475px;
+        }
+      }
+
+      @media (max-width: 750px){
+        .box-3 {
+          width: 350px;
+          height: 225px;
+
+          top: 270px;
+          left: 1385px;
+        }
+      }
+
       .final {
         position: absolute;
-        width: 480px;
-        height: 50px;
-
-        top: 275px;
-        left: 2475px;
 
         background: #282A36;
         border: 2.25px solid #8be9fd;
@@ -439,9 +567,38 @@ export default () => {
         text-align: center;
       }
 
-      .boxtext {
-        width: 430px;
-        font-size: 18px;
+      @media (min-width: 750px){
+        .final {
+          width: 480px;
+          height: 50px;
+
+          top: 275px;
+          left: 2475px;
+        }
+      }
+
+      @media (max-width: 750px){
+        .final {
+          width: 350px;
+          height: 50px;
+
+          top: 510px;
+          left: 1385px;
+        }
+      }
+
+      @media (min-width: 750px){
+        .boxtext {
+          width: 430px;
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 750px){
+        .boxtext {
+          width: 300px;
+          font-size: 18px;
+        }
       }
 
       .huge {
