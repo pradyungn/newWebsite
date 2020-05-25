@@ -232,7 +232,7 @@ export default () => {
       @media (max-width: 750px){
         .frame {
           width: 450px;
-          height: 750px;
+          height: 650px;
 
           position: absolute;
           left: calc(50% - 450px/2 + 0.5px);
