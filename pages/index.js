@@ -304,7 +304,7 @@ export default () => {
       @media (min-width: 750px){
         .buttons {
           width: 110px;
-          height: 180px;
+          height: 220px;
           left: 265px;
           top: 0px;
         }
