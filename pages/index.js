@@ -72,15 +72,15 @@ export default () => {
               </div>
             </Link>
 
-            <Link href="/static/Resume.pdf">
+            <Link href="/docs">
               <div className="button bgap">
-                <div className="btext">Resume</div>
+                <div className="btext">Documents</div>
               </div>
             </Link>
 
             <Link href="/portfolio">
               <div className="button">
-                <div className="btext">Portfolio</div>
+                <div className="btext">Projects</div>
               </div>
             </Link>
 
