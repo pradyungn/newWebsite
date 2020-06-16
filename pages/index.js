@@ -74,7 +74,7 @@ export default () => {
 
             <Link href="/docs">
               <div className="button bgap">
-                <div className="btext">Documents</div>
+                <div className="btext">Docs</div>
               </div>
             </Link>
 

@@ -53,11 +53,18 @@ export default class Container extends React.Component {
                         display: flex;
                         justify-content: space-between;
                         margin-top: 20px;
-                        margin-bottom: 20px;
+                        margin-bottom: 20px; }
+
+                    @media (max-width: 700px){
+                        .container {
+                            max-width:700px;
+                        }
                     }
 
-                    .container {
-                        max-width:700px;
+                    @media (min-width: 700px){
+                        .container {
+                            width:700px;
+                        }
                     }
 
                     .hrlink {
