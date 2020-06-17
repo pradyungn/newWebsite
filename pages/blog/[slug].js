@@ -23,7 +23,7 @@ export default function BlogTemplate(props) {
             <p>{frontmatter.blurb}</p>
             <div className="fatline"></div>
             <div>
-                <ReactMarkdown source={markdownBody} />
+                <ReactMarkdown source={markdownBody}/>
             </div>
             <style jsx global>{`
                 .fatline{
@@ -54,6 +54,12 @@ export default function BlogTemplate(props) {
                         justify-content: space-between;
                         margin-bottom: -25px;
                     }
+                }
+
+                pre {
+                    background: #44475a;
+                    border-radius: 4px;
+                    padding: 10px;
                 }
             `}</style>
         </Container>
