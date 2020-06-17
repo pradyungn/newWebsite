@@ -14,143 +14,150 @@ import React, {useState} from 'react'
 import { FaTwitter, FaGithubAlt, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 
 export default () => {
-  const [num, setNum] = useState(0);
+    const [num, setNum] = useState(0);
 
-  function Slide(props) {
-    return (
-      <div className="slide">
-        {props.children}
-      </div>
-    )
-  }
-
-
-  function Jump({lnum}) {
-    return (
-      <a className={num === lnum ? "jump-active" : "jump"} href="#" onClick={() => setNum(lnum)}></a>
-    );
-  }
-
-  return (
-  <main>
-    <div className="frame">
-    <div className="deck" style={{transform: "translateX("+(num*-100).toString()+"%)"}}>
-      <Slide>
-        <div className="me">
-          <img src="/static/me.jpg" className="portrait"/>
-        <div className="btext" style={{marginBottom:"7.5px"}}>Pradyun Narkadamilli</div>
-
-        <div className="socials">
-          <a href="https://www.facebook.com/profile.php?id=100009257228843" className="invisible">
-            <div className="social"><FaFacebookF size="12px" className="icon" /></div>
-          </a>
-          <a href="https://github.com/pradyungn" className="invisible">
-            <div className="social"><FaGithubAlt size="12px" className="icon" /></div>
-          </a>
-          <a href="https://www.linkedin.com/in/pradyun-n-958499b8/" className="invisible">
-            <div className="social"><FaLinkedinIn size="12px" className="icon" /></div>
-          </a>
-          <a href="https://twitter.com/pradyungn" className="invisible">
-            <div className="social"><FaTwitter size="12px" className="icon" /></div>
-          </a>
-        </div>
-        </div>
-
-        <div className="right">
-          <div className="quoteBox">
-            <div id="text">
-              <div className="btext">I'm</div>
-              <div id="mbruh" className="quotext">a programmer</div>
-              <div className="underline"></div>
+    function Slide(props) {
+        return (
+            <div className="slide">
+                {props.children}
             </div>
-          </div>
+        )
+    }
 
-          <div className="buttons">
-            <Link href="/blog">
-              <div className="button bgap">
-                <div className="btext">Blog</div>
-              </div>
-            </Link>
 
-            <Link href="/docs">
-              <div className="button bgap">
-                <div className="btext">Docs</div>
-              </div>
-            </Link>
+    function Jump({lnum}) {
+        return (
+            <a className={num === lnum ? "jump-active" : "jump"} href="#" onClick={() => setNum(lnum)}></a>
+        );
+    }
 
-            <Link href="/portfolio">
-              <div className="button">
-                <div className="btext">Projects</div>
-              </div>
-            </Link>
+    return (
+        <Head>
+            <title>pradyungn</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="og:title" content="pradyungn"/>
+            <meta name="og:description" content="Thinker. Developer. Innovator."/>
+            <meta name="og:image" content="https://new-website.pradyungn.now.sh/static/me.jpg"/>
+        </Head>
+        <main>
+            <div className="frame">
+                <div className="deck" style={{transform: "translateX("+(num*-100).toString()+"%)"}}>
+                    <Slide>
+                        <div className="me">
+                            <img src="/static/me.jpg" className="portrait"/>
+                            <div className="btext" style={{marginBottom:"7.5px"}}>Pradyun Narkadamilli</div>
 
-          </div>
-        </div> 
-      </Slide>
+                            <div className="socials">
+                                <a href="https://www.facebook.com/profile.php?id=100009257228843" className="invisible">
+                                    <div className="social"><FaFacebookF size="12px" className="icon" /></div>
+                                </a>
+                                <a href="https://github.com/pradyungn" className="invisible">
+                                    <div className="social"><FaGithubAlt size="12px" className="icon" /></div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/pradyun-n-958499b8/" className="invisible">
+                                    <div className="social"><FaLinkedinIn size="12px" className="icon" /></div>
+                                </a>
+                                <a href="https://twitter.com/pradyungn" className="invisible">
+                                    <div className="social"><FaTwitter size="12px" className="icon" /></div>
+                                </a>
+                            </div>
+                        </div>
 
-      <Slide>
-        <div className="blurb-1">
-          <div className="huge"><b>Hi! I'm Pradyun!</b></div>
-        </div>
+                        <div className="right">
+                            <div className="quoteBox">
+                                <div id="text">
+                                    <div className="btext">I'm</div>
+                                    <div id="mbruh" className="quotext">a programmer</div>
+                                    <div className="underline"></div>
+                                </div>
+                            </div>
 
-        <div className="box-1">
-          <div className="boxtext">
-            <p>I'm a 16 year old Junior at Dougherty Valley High School. I've been programming for over 7 years, and am self-taught. I view programming as not only my craft, but my hobby. The very thing that wakes me up in the morning, and keeps me up at night.</p>
-            <p>While I specialize in back-end development, I do mobile and web development as well. I am fluent in more than 8 languages, and am experienced with tools like Tensorflow, React, Flask/Django, etc.</p>
-          </div>
-        </div>
-      </Slide>
+                            <div className="buttons">
+                                <Link href="/blog">
+                                    <div className="button bgap">
+                                        <div className="btext">Blog</div>
+                                    </div>
+                                </Link>
 
-      <Slide>
-        <div className="blurb-2 huge">
-            <b>About Me </b>          
-        </div> 
-        <div className="box-2">
-          <div className="boxtext">
-            <ul>
-              <li>I compete in VEX Robotics, on Team 3304R</li>
-              <li>
-                I've organized <a href="https://www.launchhacks.tech" style={{color:"#8be9fd"}}>LaunchHacks</a>, <a href="https://www.dvhacks.tech" style={{color:"#ff5555"}}>DVHacks II/III</a>, and <a href="https://www.dvhacks.tech" style={{color:"#50fa7b"}}>ProHacks</a>
-              </li>
-              <li>I was a national finalist in the 2020 Samsung Solve for Tomorrow. Learn more <Link href="/portfolio#solve"><a>here</a></Link>.</li>
-              <li>I have a Bachelor's Degree in Telugu (2015)</li>
-              <li>I am a 2nd degree black belt in Taekwondo</li>
-              <li>I've attended over 10 hackathons since early 2019. Learn more <Link href="/portfolio#hackathons"><a>here</a></Link>.</li>
-            </ul>
-          </div>
-        </div>
-      </Slide>
+                                <Link href="/docs">
+                                    <div className="button bgap">
+                                        <div className="btext">Docs</div>
+                                    </div>
+                                </Link>
 
-      <Slide>
-        <div className="blurb-3">
-          <div className="huge">
-            <b>Contact Me</b>
-          </div>
-        </div>
+                                <Link href="/portfolio">
+                                    <div className="button">
+                                        <div className="btext">Projects</div>
+                                    </div>
+                                </Link>
 
-        <div className="box-3">
-          <div className="boxtext">
-            <p>I love meeting new people! Want to talk 1 on 1? Feel free to reach out to me at <a href="mailto:pradyungn@gmail.com">pradyungn@gmail.com</a> or hit up my discord at <span style={{color:"#caa9fa", fontWeight: 700, fontStyle: "italic"}}>Pradyun#9732</span>. Otherwise, I can be found lurking the depths of the Hack Club Slack :P</p>
-          </div>
-        </div>
+                            </div>
+                        </div> 
+                    </Slide>
 
-        <div className="final">
-          <div className="boxtext">
-            Made with ❤️  and ☕ by Pradyun N.
-          </div>
-        </div>
-      </Slide>
-    </div>
+                    <Slide>
+                        <div className="blurb-1">
+                            <div className="huge"><b>Hi! I'm Pradyun!</b></div>
+                        </div>
 
-    <div className="nav">
-      <Jump lnum={ 0 }/>
-      <Jump lnum={ 1 }/>
-      <Jump lnum={ 2 }/>
-      <Jump lnum={ 3 }/>
-    </div>
-    </div>
+                        <div className="box-1">
+                            <div className="boxtext">
+                                <p>I'm a 16 year old Junior at Dougherty Valley High School. I've been programming for over 7 years, and am self-taught. I view programming as not only my craft, but my hobby. The very thing that wakes me up in the morning, and keeps me up at night.</p>
+                                <p>While I specialize in back-end development, I do mobile and web development as well. I am fluent in more than 8 languages, and am experienced with tools like Tensorflow, React, Flask/Django, etc.</p>
+                            </div>
+                        </div>
+                    </Slide>
 
-    <style jsx global>{`
+                    <Slide>
+                        <div className="blurb-2 huge">
+                            <b>About Me </b>          
+                        </div> 
+                        <div className="box-2">
+                            <div className="boxtext">
+                                <ul>
+                                    <li>I compete in VEX Robotics, on Team 3304R</li>
+                                    <li>
+                                        I've organized <a href="https://www.launchhacks.tech" style={{color:"#8be9fd"}}>LaunchHacks</a>, <a href="https://www.dvhacks.tech" style={{color:"#ff5555"}}>DVHacks II/III</a>, and <a href="https://www.dvhacks.tech" style={{color:"#50fa7b"}}>ProHacks</a>
+                                    </li>
+                                    <li>I was a national finalist in the 2020 Samsung Solve for Tomorrow. Learn more <Link href="/portfolio#solve"><a>here</a></Link>.</li>
+                                    <li>I have a Bachelor's Degree in Telugu (2015)</li>
+                                    <li>I am a 2nd degree black belt in Taekwondo</li>
+                                    <li>I've attended over 10 hackathons since early 2019. Learn more <Link href="/portfolio#hackathons"><a>here</a></Link>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </Slide>
+
+                    <Slide>
+                        <div className="blurb-3">
+                            <div className="huge">
+                                <b>Contact Me</b>
+                            </div>
+                        </div>
+
+                        <div className="box-3">
+                            <div className="boxtext">
+                                <p>I love meeting new people! Want to talk 1 on 1? Feel free to reach out to me at <a href="mailto:pradyungn@gmail.com">pradyungn@gmail.com</a> or hit up my discord at <span style={{color:"#caa9fa", fontWeight: 700, fontStyle: "italic"}}>Pradyun#9732</span>. Otherwise, I can be found lurking the depths of the Hack Club Slack :P</p>
+                            </div>
+                        </div>
+
+                        <div className="final">
+                            <div className="boxtext">
+                                Made with ❤️  and ☕ by Pradyun N.
+                            </div>
+                        </div>
+                    </Slide>
+                </div>
+
+                <div className="nav">
+                    <Jump lnum={ 0 }/>
+                    <Jump lnum={ 1 }/>
+                    <Jump lnum={ 2 }/>
+                    <Jump lnum={ 3 }/>
+                </div>
+            </div>
+
+            <style jsx global>{`
       body,html {
           font-family: 'Roboto', sans-serif;
           font-weight:400;
@@ -199,7 +206,7 @@ export default () => {
           left: 55px;
         }
       }
-      
+
       @media (max-width: 750px){
         .me {
           top: 10px;
@@ -368,7 +375,7 @@ export default () => {
         margin-left: auto;
         border-radius: 75px;
       }
-      
+
       .underline {
         width: 190px;
         height: 4.5px;
@@ -423,7 +430,7 @@ export default () => {
           height: 400px;
         }
       }
-      
+
       .deck {
         display:flex;
         transition: transform 500ms ease;
@@ -642,5 +649,5 @@ export default () => {
       }
 
     `}</style>
-  </main>
-)}
+        </main>
+    )}
