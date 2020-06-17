@@ -12,6 +12,7 @@
 import Link from 'next/link'
 import React, {useState} from 'react'
 import { FaTwitter, FaGithubAlt, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import Head from 'next/head'
 
 export default () => {
     const [num, setNum] = useState(0);
@@ -32,14 +33,14 @@ export default () => {
     }
 
     return (
-        <Head>
-            <title>pradyungn</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="og:title" content="pradyungn"/>
-            <meta name="og:description" content="Thinker. Developer. Innovator."/>
-            <meta name="og:image" content="https://new-website.pradyungn.now.sh/static/me.jpg"/>
-        </Head>
         <main>
+            <Head>
+                <title>pradyungn</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="og:title" content="pradyungn"/>
+                <meta name="og:description" content="Thinker. Developer. Innovator."/>
+                <meta name="og:image" content="https://new-website.pradyungn.now.sh/static/me.jpg"/>
+            </Head>
             <div className="frame">
                 <div className="deck" style={{transform: "translateX("+(num*-100).toString()+"%)"}}>
                     <Slide>
