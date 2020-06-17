@@ -75,21 +75,21 @@ export default () => {
 
                             <div className="buttons">
                                 <Link href="/blog">
-                                    <div className="button bgap">
+                                    <a className="button invisible bgap">
                                         <div className="btext">Blog</div>
-                                    </div>
+                                    </a>
                                 </Link>
 
                                 <Link href="/docs">
-                                    <div className="button bgap">
+                                    <a className="button bgap invisible">
                                         <div className="btext">Docs</div>
-                                    </div>
+                                    </a>
                                 </Link>
 
                                 <Link href="/portfolio">
-                                    <div className="button">
+                                    <a className="button invisible">
                                         <div className="btext">Projects</div>
-                                    </div>
+                                    </a>
                                 </Link>
 
                             </div>
@@ -100,8 +100,7 @@ export default () => {
                         <div className="blurb-1">
                             <div className="huge"><b>Hi! I'm Pradyun!</b></div>
                         </div>
-
-                        <div className="box-1">
+<div className="box-1">
                             <div className="boxtext">
                                 <p>I'm a 16 year old Junior at Dougherty Valley High School. I've been programming for over 7 years, and am self-taught. I view programming as not only my craft, but my hobby. The very thing that wakes me up in the morning, and keeps me up at night.</p>
                                 <p>While I specialize in back-end development, I do mobile and web development as well. I am fluent in more than 8 languages, and am experienced with tools like Tensorflow, React, Flask/Django, etc.</p>
@@ -357,13 +356,6 @@ export default () => {
         border-color: #ff79c6;
       }
 
-      @media (min-width: 750px){
-        .button:hover {
-          box-shadow: 5px 5px 2px #44475a;
-          transform:translate(-5px, -5px)
-        }
-      }
-
       .btext{
         font-size: 21px;
         color: #f8f8f2;
@@ -386,6 +378,10 @@ export default () => {
       .invisible {
         color: #f8f8f2;
       }
+        
+        .invisible:hover {
+            text-decoration: none;
+        }
 
       .jump-active {
         width:22.5px;
@@ -648,6 +644,13 @@ export default () => {
       a:hover {
         text-decoration:underline;
       }
+
+    .invisible {
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 400;
+        color: #f8f8f2;
+    }
 
     `}</style>
         </main>

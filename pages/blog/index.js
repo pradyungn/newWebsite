@@ -12,20 +12,31 @@ function blog(props) {
             <div className='list'>
                 {props.posts.map(post => (
                     <Link href={"/blog/"+post.slug}>
-                        <div className="pcont">
+                        <a className="pcont invisible">
                             <div className="pcn">
                                 <div className="phead">
-                                    <h3>{post.document.data.title}</h3>
-                                    <h4>{post.document.data.date}</h4>
+                                <h3>{post.document.data.title}</h3>
+                                <h4>{post.document.data.date}</h4>
                                 </div>
-                                <div className="smoline"></div>
-                                <p>{post.document.data.blurb}</p>
+                            <div className="smoline"></div>
+                            <p>{post.document.data.blurb}</p>
                             </div>
-                        </div>
+                        </a>
                     </Link>
                 ))}
             </div>
             <style jsx global>{`
+                .invisible {
+                    font-style: normal;
+                    text-decoration: none;
+                    font-weight: 400;
+                    color: #f8f8f2;
+                }
+
+                .invisible:hover {
+                    color: #f8f8f2;
+                }
+
                 .list {
                     display: flex;
                     justify-content: space-between;
