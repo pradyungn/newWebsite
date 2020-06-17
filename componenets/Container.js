@@ -8,13 +8,11 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-
-
-export default class Container extends React.Component {
-    render() {
+export default function Container(props) {
         return (
             <div className="container">
                 <Head>
+                    <title>{ props.siteTitle }</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <meta name="og:title" content="pradyungn"/>
                     <meta name="og:description" content="Thinker. Developer. Innovator."/>
@@ -29,7 +27,7 @@ export default class Container extends React.Component {
                     </div>
                 </div>
                 <div className="main">
-                    {this.props.children}
+                    {props.children}
                 </div>
                 <footer>
                     <p> Made with ❤️  and ☕ by Pradyun N.  </p>
@@ -95,5 +93,4 @@ export default class Container extends React.Component {
                 ` } </style>
             </div>
         )
-    }
 }

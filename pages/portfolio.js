@@ -1,6 +1,5 @@
 import React from 'react'
 import Container from '../componenets/Container'
-import Head from 'next/head'
 
 export default () => {
     function Item(props) {
@@ -20,10 +19,7 @@ export default () => {
         )
     }
     return(
-        <Container>
-            <Head>
-                <title>Portfolio</title>
-            </Head>
+        <Container siteTitle="Portfolio">
             <h1 style={{color: "#8be9fd"}}>
                 Portfolio
             </h1>
