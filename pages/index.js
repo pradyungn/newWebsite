@@ -13,6 +13,8 @@ import Link from 'next/link'
 import React, {useState} from 'react'
 import { FaTwitter, FaGithubAlt, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import Head from 'next/head'
+import Typist from 'react-typist'
+import TypistLoop from 'react-typist-loop'
 
 export default () => {
     const [num, setNum] = useState(0);
@@ -68,7 +70,21 @@ export default () => {
                             <div className="quoteBox">
                                 <div id="text">
                                     <div className="btext">I'm</div>
-                                    <div id="mbruh" className="quotext">a programmer</div>
+                                    <div id="mbruh" className="quotext">
+                                        <TypistLoop interval={3000}>
+                                            {[
+                                                'a programmer',
+                                                'an innovator',
+                                                'dedicated',
+                                                'creative',
+                                                'motivated',
+                                                'a linux user',
+                                                'passionate',
+                                                'a high schooler',
+                                                'human',
+                                            ].map(text => <Typist key={text} startDelay={250}>{text}</Typist>)}
+                                        </TypistLoop>
+                                    </div>
                                     <div className="underline"></div>
                                 </div>
                             </div>

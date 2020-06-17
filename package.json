@@ -9,14 +9,14 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
-    "mdx-utils": "^0.2.0",
     "next": "9.4.2",
-    "prism-react-renderer": "^1.1.1",
     "raw-loader": "^4.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-icons": "^3.8.0",
-    "react-markdown": "^4.3.1"
+    "react-markdown": "^4.3.1",
+    "react-typist": "^2.0.5",
+    "react-typist-loop": "^0.0.5"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
