@@ -9,6 +9,7 @@ export default () => {
             <ul style={{height: "65vh"}}>
                 <li><a href="/static/Resume.pdf">resume</a></li>
                 <li><a href="/static/CL.pdf">cover letter</a></li>
+                <li><a href="/static/3304R_Notebok_TTEarly.pdf">robotics notebook - 19/20 early season</a></li>
                 <li>that's it for now? i'll add robotics writeups and some essays here in the future :)</li>
             </ul>
         </Container>
