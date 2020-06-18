@@ -38,6 +38,7 @@ export default () => {
         <main>
             <Head>
                 <title>pradyungn</title>
+                <meta name="description" content="Thinker. Developer. Innovator."/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="og:title" content="pradyungn"/>
                 <meta name="og:description" content="Thinker. Developer. Innovator."/>
@@ -226,7 +227,7 @@ export default () => {
       @media (max-width: 750px){
         .me {
           top: 10px;
-          left: 75px;
+          left: 60px;
         }
       }
 
@@ -251,11 +252,11 @@ export default () => {
 
       @media (max-width: 750px){
         .frame {
-          width: 350px;
+          width: 320px;
           height: 550px;
 
           position: absolute;
-          left: calc(50% - 350px/2 + 0.5px);
+          left: calc(50% - 320px/2 + 0.5px);
           top: calc(50% - 550px/2 + 0.5px);
         }
       }
@@ -275,7 +276,7 @@ export default () => {
           position: absolute;
           width: 250px;
           height: 210px;
-          left: 50px;
+          left: 35px;
           top: 230px;
         }
       }
@@ -481,21 +482,21 @@ export default () => {
         .blurb-1 {
           position: absolute;
           top: 30px;
-          left: 395px;
+          left: 350px;
           width: 100%;
         }
 
         .blurb-2 {
           position: absolute;
           top: 30px;
-          left: 785px;
+          left: 710px;
           width: 100%;
         }
 
         .blurb-3 {
           position: absolute;
           top: 105px;
-          left: 1115px;
+          left: 1010px;
           width: 100%;
         }
       }
@@ -528,7 +529,7 @@ export default () => {
           height: 375px;
 
           top: 100px;
-          left: 367px;
+          left: 322px;
         }
       }
 
@@ -561,7 +562,7 @@ export default () => {
           height: 375px;
 
           top: 100px;
-          left: 710px;
+          left: 635px;
         }
       }
 
@@ -593,7 +594,7 @@ export default () => {
           height: 200px;
 
           top: 165px;
-          left: 1055px;
+          left: 950px;
         }
       }
 
@@ -627,7 +628,7 @@ export default () => {
           height: 50px;
 
           top: 375px;
-          left: 1055px;
+          left: 950px;
         }
       }
 

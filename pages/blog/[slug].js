@@ -14,7 +14,7 @@ export default function BlogTemplate(props) {
     const markdownBody = props.content
     const frontmatter = props.data
     return (
-        <Container siteTitle={frontmatter.title}>
+        <Container siteTitle={frontmatter.title} description={frontmatter.blurb}>
             <Link href="/blog"><a>&larr; Go Back</a></Link>
             <div className="clap">
                 <h1 className="gah" style={{color: colors[frontmatter.color]}}>{frontmatter.title}</h1>

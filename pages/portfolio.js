@@ -19,7 +19,7 @@ export default () => {
         )
     }
     return(
-        <Container siteTitle="Portfolio">
+        <Container siteTitle="Portfolio" description="A conveniently organized list of all of my major projects! I tend to update this list after I've completed new projects, so this list may not alwayas be up-to-date.">
             <h1 style={{color: "#8be9fd"}}>
                 Portfolio
             </h1>

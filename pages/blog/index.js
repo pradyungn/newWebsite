@@ -5,9 +5,9 @@ import Container from '../../componenets/Container'
 
 function blog(props) {
     return(
-        <Container siteTitle="Notebook">
+        <Container siteTitle="Notebook" description="Basically my version of a blog - except I'm not lazy enough to use wordpress. I write about a variety of topic, primarily revolving around the tech space.">
             <h1 style={{color: "#50fa7b"}}>Notebook</h1>
-            <p>This is basically my version of a blog - except I'm not lazy enough to use wordpress. This section is still in development :)</p>
+            <p>This is basically my version of a blog - except I'm not lazy enough to use wordpress. I tend to write all kinds of things - ethics, technology, keyboards, linux - whatever interests me at the moment :)</p>
             <div className="fatline"></div>
             <div className='list'>
                 {props.posts.map(post => (

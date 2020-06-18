@@ -3,7 +3,7 @@ import Container from '../componenets/Container'
 
 export default () => {
     return (
-        <Container siteTitle="Documents">
+        <Container siteTitle="Documents" description="A collection of documents that I found worth sharing :) Includes Resume and Cover Letter.">
             <h1 style={{color: "#f1fa8c"}}>Documents</h1>
             <p>Any documents that I find worth publishing, I guess? This will get updated with project documentation and such, as time goes on.</p>
             <ul style={{height: "65vh"}}>

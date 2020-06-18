@@ -14,8 +14,9 @@ export default function Container(props) {
                 <Head>
                     <title>{ props.siteTitle }</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <meta name="og:title" content="pradyungn"/>
-                    <meta name="og:description" content="Thinker. Developer. Innovator."/>
+                    <meta name="description" content={ props.description ? props.description : "Thinker. Developer. Innovator." }/>
+                    <meta name="og:description" content={ props.description ? props.description : "Thinker. Developer. Innovator." }/>
+                    <meta name="og:title" content={ props.siteTitle }/>
                     <meta name="og:image" content="https://new-website.pradyungn.now.sh/static/me.jpg"/>
                 </Head>
                 <div className="header">
