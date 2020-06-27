@@ -68,7 +68,6 @@ export default function BlogTemplate(props) {
 
 BlogTemplate.getInitialProps = async function(context) {
     const { slug } = context.query
-    // grab the file in the posts dir based on the slug
     const content = await import(`../../posts/${slug}.md`)
     const data = matter(content.default)
     return {
