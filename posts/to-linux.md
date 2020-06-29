@@ -40,4 +40,3 @@ Despite all the great benefits to using Linux, that's not to say that there aren
 
 ## Verdict
 Linux certainly isn't for everyone. It's a category of operating system that's hard for many to navigate, one that's easy to screw up if you don't know what you're doing, and one that if rife with compatibility issues. But consider the fact that, apart from the last one, the other two cons are preventable. You can learn how to navigate a new OS, and all systems are easy to frick up if you don't know what you're doing. But it's obvious that the benefits far outweight the risks of running a Linux system. So if you're a developer that wants a great new OS to use, and you're tired of Windows, look no further than a Linux distribution as your salvation.
-

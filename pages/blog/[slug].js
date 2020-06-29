@@ -1,4 +1,5 @@
 import matter from 'gray-matter'
+import CodeBlock from '../../componenets/CodeBlock'
 import ReactMarkdown from 'react-markdown'
 import Container from '../../componenets/Container'
 import Link from 'next/link'
@@ -23,7 +24,7 @@ export default function BlogTemplate(props) {
             <p>{frontmatter.blurb}</p>
             <div className="fatline"></div>
             <div>
-                <ReactMarkdown source={markdownBody}/>
+                <ReactMarkdown source={markdownBody} renderers={{ code: CodeBlock }}/>
             </div>
             <style jsx global>{`
                 .fatline{
@@ -57,7 +58,7 @@ export default function BlogTemplate(props) {
                 }
 
                 pre {
-                    background: #44475a;
+                    background: #44475a !important;
                     border-radius: 4px;
                     padding: 10px;
                 }
