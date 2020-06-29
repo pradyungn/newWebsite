@@ -24,7 +24,7 @@ export default () => {
                 Portfolio
             </h1>
             <p>
-                A conveniently organized list of all of my major projects! I tend to update this list <i>after</i> I've completed new projects, so this list may not alwayas be up-to-date. Feel free to <a href="mailto:pradyungn@gmail.com">contact me</a> if you want to follow up on, or inquire about any of these projects.
+                A conveniently organized list of all of my major projects! I tend to update this list <i>after</i> I've completed new projects, so this list may not alwayas be up-to-date. Feel free to <a href="mailto:me@pradyungn.tech">contact me</a> if you want to follow up on, or inquire about any of these projects.
             </p>
 
             <Item>
@@ -69,6 +69,29 @@ export default () => {
                     <li>We felt that this project had not reached its full potential yet, so we submitted an interface between the glove and a robotic arm to Millibit Hacks in 2019. While we didn't win an award (since we didn't make a VR project, necessarily), we were invited to demonstrate our project to the UC Berkeley VR department</li>
                     <li>This project was largely written in Unity, so we used C# as a standard so that we could maintain a common denominator in our code. However, for prototyping we wrote some data parsers using C++</li>
                     <li>This project is what I consider to be the most industry-ready project I've ever built - the applications in aeronautics, oil, and various industries are limitless</li>
+                </ul>
+            </Item>
+
+            <Item>
+                <h3 style={{color: "#f1fa8c"}}>VR Mission Control</h3>
+                <p>Our submission to LAHacks 2019. Armed with the power of an Oculus Rift (Thanks <span style={{fontWeight:700}}><span style={{color:"#ff5555"}}>M</span ><span style={{color:"#f1fa8c"}}>L</span><span style={{color:"#8be9fd"}}>H</span></span> :P), we sought to create an effective interface for the onboard camera feed of our Raspberry Pi IoT Drone.  However this project soon evolved into something different - we essentially made an interface that had an infinite number of virtual monitors. Therefore within the simulation, you could have say a 4 monitor setup and use that, even if in reality you had one monitor.</p>
+                <ul>
+                        <li>
+                            We used Unity to create a virtual dashboard of sorts - one with an array of panes that one could see (in theory) different video feeds on.
+                            <ul>
+                                <li>As one might suspect, the Unity code was written in C#</li>
+                            </ul>
+                        </li>
+                        <li>We once again used DNSMasq to create a wifi hotspot on the RasPi - however this time we also patched in an internet connection using a USB wifi module, making the RasPi function even more like an actual router.</li>
+                        <li>We used a Flask webserver to stream the video feed from the drone's onboard camera - however we also decided to make an API for the drone's condition this time</li>
+                </ul>
+            </Item>
+
+            <Item>
+                <h3 style={{color: "#ff5555"}} id="solve">Flameless</h3>
+                <p>My school's XREDU Club's submission to the Samsung Solve For Tomorrow. As one of the two members on the development team, I had an active role in the design and (obviously) development of our project. Flameless is a fire analytics system that aggregates fire data over a large area (in realtime, of course), plots this data on a map, and - in the even that it detects a fire - predicts where the fire may spread.</p>
+                <ul>
+                    <li></li>
                 </ul>
             </Item>
 
