@@ -614,11 +614,11 @@ export default () => {
 
         @media (max-width: 750px) {
           .box-1 {
-            width: 300px;
+            width: 280px;
             height: 375px;
 
             top: 100px;
-            left: 322px;
+            left: 332px;
           }
         }
 
@@ -647,11 +647,11 @@ export default () => {
 
         @media (max-width: 750px) {
           .box-2 {
-            width: 300px;
+            width: 280px;
             height: 375px;
 
             top: 100px;
-            left: 635px;
+            left: 645px;
           }
         }
 
@@ -679,11 +679,11 @@ export default () => {
 
         @media (max-width: 750px) {
           .box-3 {
-            width: 300px;
+            width: 280px;
             height: 200px;
 
             top: 165px;
-            left: 950px;
+            left: 960px;
           }
         }
 
@@ -713,11 +713,11 @@ export default () => {
 
         @media (max-width: 750px) {
           .final {
-            width: 300px;
+            width: 280px;
             height: 50px;
 
             top: 375px;
-            left: 950px;
+            left: 960px;
           }
         }
 
