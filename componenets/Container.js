@@ -34,6 +34,7 @@ export default function Container(props) {
                     <p> Made with ❤️  and ☕ by Pradyun N.  </p>
                 </footer>
                 <style jsx global>{`
+                    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
                     html, body {
                         font-family: Roboto, sans-serif;
                         background-color: #282a36;

@@ -27,6 +27,7 @@ export default function BlogTemplate(props) {
                 <ReactMarkdown source={markdownBody} renderers={{ code: CodeBlock }}/>
             </div>
             <style jsx global>{`
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
                 .fatline{
                     width:100%;
                     height: 4px;
@@ -61,6 +62,11 @@ export default function BlogTemplate(props) {
                     background: #44475a !important;
                     border-radius: 4px;
                     padding: 10px;
+                }
+
+                code {
+                    font-family: Roboto Mono, monospace;
+                    font-size: 12px;
                 }
             `}</style>
         </Container>
