@@ -58,10 +58,16 @@ export default function BlogTemplate(props) {
                     }
                 }
 
+                code {
+                    background: #44475a !important;
+                    border-radius: 4px;
+                }
+
                 pre {
                     background: #44475a !important;
                     border-radius: 4px;
                     padding: 10px;
+                    margin: 20px
                 }
 
                 code {

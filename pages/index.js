@@ -6,9 +6,6 @@
 
 // Main page of my website. CSS is contained within a JSX tag at the bottom for now, will work on making it more modular in the future.
 
-// Vim Notes:
-// Marks for j (javascript) and c (css)
-
 import Link from "next/link";
 import React, { useState } from "react";
 import {
