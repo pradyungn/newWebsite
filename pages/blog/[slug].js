@@ -6,12 +6,13 @@ import Link from 'next/link'
 
 export default function BlogTemplate(props) {
     let colors = new Map()
-    colors['red'] = "#ff5555"
-    colors['purple'] = "#bd93f9"
-    colors['magenta'] = "#ff79c6"
-    colors['orange'] = "#ffb86c"
-    colors['yellow'] = "#f1fa8c"
-    colors['green'] = "#50fa7b"
+    colors['red'] = "#ac8a8c"
+    colors['purple'] = "#8f8aac"
+    colors['magenta'] = "#ac8aac"
+    colors['orange'] = "#c6a679"
+    colors['yellow'] = "#aca98a"
+    colors['green'] = "#8aac8c"
+    colors['cyan'] = "#8aabac"
     const markdownBody = props.content
     const frontmatter = props.data
     return (

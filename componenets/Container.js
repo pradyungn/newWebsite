@@ -20,7 +20,7 @@ export default function Container(props) {
                     <meta name="og:image" content="https://new-website.pradyungn.now.sh/static/me.jpg"/>
                 </Head>
                 <div className="header">
-                    <a href="/">~</a>
+                    <a href="/" style={{color: "#ac8a8c"}}>~</a>
                     <div className="rhead">
                         <Link href="/blog"><a className="hrlink">blog</a></Link>
                         <Link href="/docs"><a className="hrlink">docs</a></Link>
@@ -37,8 +37,8 @@ export default function Container(props) {
                     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
                     html, body {
                         font-family: Roboto, sans-serif;
-                        background-color: #282a36;
-                        color: #f8f8f2;
+                        background-color: #0f0f0f;
+                        color: #f0f0f0;
                         font-weight: 400;
                         display: flex;
                         flex-direction: column;
@@ -69,6 +69,13 @@ export default function Container(props) {
 
                     .hrlink {
                         margin-left: 10px;
+                        color: #ac8a8c;
+                        transition: 250ms ease;
+                    }
+
+                    .hrlink:hover {
+                       color:#c49ea0; 
+                        text-decoration: none;
                     }
 
                     .rhead {
@@ -79,12 +86,13 @@ export default function Container(props) {
                         font-weight: 800;
                         font-style: italic;
                         text-decoration: none;
-                        color: #ff79c6;
+                        color: #8aabac;
                         transition: 250ms ease;
                     }
 
                     a:hover {
-                        color: #bd93f9; 
+                        color: #9ec3c4; 
+                        text-decoration: underline;
                     }
 
                     h1 {

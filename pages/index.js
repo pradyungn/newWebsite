@@ -97,15 +97,11 @@ export default () => {
                                     <div id="mbruh" className="quotext">
                                         <TypistLoop interval={3000}>
                                             {[
+                                                "a maker",
                                                 "a programmer",
-                                                "an innovator",
-                                                "dedicated",
-                                                "creative",
-                                                "motivated",
-                                                "a linux user",
-                                                "passionate",
-                                                "a high schooler",
-                                                "human",
+                                                "a sysadmin",
+                                                "a leader",
+                                                "an engineer",
                                             ].map((text) => (
                                                 <Typist key={text} startDelay={250}>
                                                     {text}
@@ -148,17 +144,13 @@ export default () => {
                         <div className="box-1">
                             <div className="boxtext">
                                 <p>
-                                    I'm a 16 year old Junior at Dougherty Valley High School. I've
-                                    been programming for over 7 years, and am self-taught. I view
-                                    programming as not only my craft, but my hobby. The very thing
-                                    that wakes me up in the morning, and keeps me up at night.
+                                    I'm a Senior at Dougherty Valley High School (currently toiling through the drole of college applications).
+                                    I'm passionate about making things for the sake of making things - be that as a solution, a hobby, or else.
                                 </p>
                                 <p>
-                                    While I specialize in back-end development, I do mobile and
-                                    web development as well. I am fluent in more than 8 languages,
-                                    and am experienced with tools like Tensorflow, React,
-                                    Flask/Django, etc.
-                                </p>
+                                    I'm a jack-of-all-trades, in the sense that I'm proficient with both hardware
+                                    and software. While my hardware experience is primarily centered around the implementation
+                                    and programming of microcontrollers, my software experience is more well-rounded.                                </p>
                             </div>
                         </div>
                     </Slide>
@@ -175,34 +167,34 @@ export default () => {
                                         I've organized{" "}
                                         <a
                                             href="https://www.launchhacks.tech"
-                                            style={{ color: "#8be9fd" }}
+                                            style={{ color: "#aca98a" }}
                                         >
                                             LaunchHacks
                                         </a>
                                         ,{" "}
                                         <a
                                             href="https://www.dvhacks.tech"
-                                            style={{ color: "#ff5555" }}
+                                            style={{ color: "#ac8aac" }}
                                         >
                                             DVHacks II/III
                                         </a>
                                         , and{" "}
                                         <a
-                                            href="https://www.dvhacks.tech"
-                                            style={{ color: "#50fa7b" }}
+                                            href="https://www.prohacks.tech"
+                                            style={{ color: "#c6a679" }}
                                         >
                                             ProHacks
                                         </a>
                                     </li>
                                     <li>
-                                        I was a national finalist in the 2020 Samsung Solve for
-                                        Tomorrow. Learn more{" "}
+                                        I was a natinal winner of the 2020 Samsung Solve for
+                                        Tomorrow - Learn more{" "}
                                         <Link href="/portfolio#solve">
                                             <a>here</a>
                                         </Link>
-                                        .
+                                        !
                                     </li>
-                                    <li>I have a Bachelor's Degree in Telugu (2015)</li>
+                                    <li>I have a Bachelor's Degree in Telugu (2015, not a baccalaureate)</li>
                                     <li>I am a 2nd degree black belt in Taekwondo</li>
                                     <li>
                                         I've attended over 10 hackathons since early 2019. Learn
@@ -233,7 +225,7 @@ export default () => {
                                     or hit up my discord at{" "}
                                     <span
                                         style={{
-                                            color: "#caa9fa",
+                                            color: "#8aac8b",
                                             fontWeight: 700,
                                             fontStyle: "italic",
                                         }}
@@ -261,14 +253,14 @@ export default () => {
             </div>
 
             <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
         body,
         html {
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto Condensed", sans-serif;
           font-weight: 400;
           height: 100%;
-          background-color: #282a36;
-          color: #f8f8f2;
+          background-color: #0f0f0f;
+          color: #f0f0f0;
           margin: 0;
         }
 
@@ -280,12 +272,12 @@ export default () => {
         }
 
         .social {
-          background: #44475a;
+          background: #262626;
 
           height: 20px;
           width: 20px;
 
-          border: 1.5px solid #bd93f9;
+          border: 1.5px solid #aca98a;
           border-radius: 10.5px;
 
           display: flex;
@@ -296,8 +288,8 @@ export default () => {
         }
 
         .social:hover {
-          background: #282a36;
-          border-color: #ff79c6;
+          background: #0f0f0f;
+          border-color: #8f8aac;
         }
 
         .me {
@@ -320,10 +312,9 @@ export default () => {
         }
 
         .frame {
-          background: #282a36;
-          border: 3px solid #ff79c6;
+          background: #0f0f0f;
+          border: 3px solid #ac8a8c;
           box-sizing: border-box;
-          border-radius: 15px;
           overflow: hidden;
         }
 
@@ -370,10 +361,9 @@ export default () => {
         }
 
         .quoteBox {
-          background: #282a36;
-          border: 2.25px solid #bd93f9;
+          background: #0f0f0f;
+          border: 2.25px solid #8aac8b;
           box-sizing: border-box;
-          border-radius: 15px;
 
           display: flex;
           align-items: center;
@@ -384,9 +374,9 @@ export default () => {
         @media (min-width: 750px) {
           .quoteBox {
             width: 250px;
-            height: 205px;
+            height: 180px;
             left: 0px;
-            top: 0px;
+            top: 12px;
           }
         }
 
@@ -431,10 +421,9 @@ export default () => {
           height: 50px;
           width: 100%;
 
-          background: #282a36;
-          border: 2.25px solid #caa9fa;
+          background: #0f0f0f;
+          border: 2.25px solid #8f8aac;
           box-sizing: border-box;
-          border-radius: 15px;
 
           display: flex;
           justify-content: center;
@@ -457,13 +446,13 @@ export default () => {
         }
 
         .button:hover {
-          background: #1e1f29;
-          border-color: #ff79c6;
+          background: #050505;
+          border-color: #8aabac;
         }
 
         .btext {
           font-size: 21px;
-          color: #f8f8f2;
+          color: #f0f0f0;
         }
 
         .portrait {
@@ -477,11 +466,11 @@ export default () => {
         .underline {
           width: 190px;
           height: 4.5px;
-          background: #ff79c6;
+          background: #8aabac;
         }
 
         .invisible {
-          color: #f8f8f2;
+          color: #f0f0f0;
         }
 
         .invisible:hover {
@@ -492,24 +481,25 @@ export default () => {
           width: 22.5px;
           height: 22.5px;
 
-          background: #ff79c6;
-          border: 2.25px solid #ff79c6;
+          background: #ac8aac;
+          border: 2.25px solid #ac8aac;
           box-sizing: border-box;
           border-radius: 13.5px;
+          transition: ease 150ms;
         }
 
         .jump {
           width: 22.5px;
           height: 22.5px;
 
-          border: 2.25px solid #ff79c6;
+          border: 2.25px solid #ac8aac;
           box-sizing: border-box;
           border-radius: 13.5px;
           transition: ease 150ms;
         }
 
         .jump:hover {
-          background: #bd93f940;
+            border-width: 4px;
         }
 
         .nav {
@@ -590,10 +580,9 @@ export default () => {
 
         .box-1 {
           position: absolute;
-          background: #282a36;
-          border: 2.25px solid #50fa7b;
+          background: #0f0f0f;
+          border: 2.25px solid #8aabac;
           box-sizing: border-box;
-          border-radius: 15px;
 
           display: flex;
           align-items: center;
@@ -623,10 +612,9 @@ export default () => {
         .box-2 {
           position: absolute;
 
-          background: #282a36;
-          border: 2.25px solid #ff5555;
+          background: #0f0f0f;
+          border: 2.25px solid #8aac8b;
           box-sizing: border-box;
-          border-radius: 15px;
 
           display: flex;
           align-items: center;
@@ -655,10 +643,9 @@ export default () => {
 
         .box-3 {
           position: absolute;
-          background: #282a36;
-          border: 2.25px solid #f1fa8c;
+          background: #0f0f0f;
+          border: 2.25px solid #8f8aac;
           box-sizing: border-box;
-          border-radius: 15px;
 
           display: flex;
           align-items: center;
@@ -688,10 +675,9 @@ export default () => {
         .final {
           position: absolute;
 
-          background: #282a36;
-          border: 2.25px solid #8be9fd;
+          background: #0f0f0f;
+          border: 2.25px solid #aca98a;
           box-sizing: border-box;
-          border-radius: 15px;
 
           display: flex;
           align-items: center;
@@ -741,7 +727,7 @@ export default () => {
           text-decoration: none;
           font-weight: 700;
           font-style: italic;
-          color: #ff79c6;
+          color: #8aabac;
         }
 
         a:hover {
@@ -752,7 +738,7 @@ export default () => {
           font-style: normal;
           text-decoration: none;
           font-weight: 400;
-          color: #f8f8f2;
+          color: #f0f0f0;
         }
       `}</style>
         </main>

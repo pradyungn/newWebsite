@@ -6,7 +6,7 @@ import Container from '../../componenets/Container'
 function blog(props) {
     return(
         <Container siteTitle="Notebook" description="Basically my version of a blog - except I'm not lazy enough to use wordpress. I write about a variety of topic, primarily revolving around the tech space.">
-            <h1 style={{color: "#50fa7b"}}>Notebook</h1>
+            <h1 style={{color: "#8aac8b"}}>Notebook</h1>
             <p>This is basically my version of a blog - except I'm not lazy enough to use wordpress. I tend to write all kinds of things - ethics, technology, keyboards, linux - whatever interests me at the moment :)</p>
             <div className="fatline"></div>
             <div className='list'>
@@ -49,20 +49,21 @@ function blog(props) {
                 }
 
                 .pcont {
-                    background-color: #44475a;
+                    background-color: #0f0f0f;
                     border-radius: 4px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     margin-bottom: 5%;
-                    border: 3px solid #BD93f9;
+                    border: 3px solid #262626;
                     cursor: pointer;
                     transition: 300ms ease;
                 }
 
                 .pcont:hover {
-                    background-color: #282a36;
-                    border: 3px solid #ff79c6;
+                    background-color: #050505;
+                    border: 3px solid #ac8a8c;
+                    text-decoration: none;
                 }
 
                 @media (min-width: 750px) {
