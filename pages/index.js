@@ -187,14 +187,14 @@ export default () => {
                                         </a>
                                     </li>
                                     <li>
-                                        I was a natinal winner of the 2020 Samsung Solve for
+                                        I was a national winner of the 2020 Samsung Solve for
                                         Tomorrow - Learn more{" "}
                                         <Link href="/portfolio#solve">
                                             <a>here</a>
                                         </Link>
                                         !
                                     </li>
-                                    <li>I have a Bachelor's Degree in Telugu (2015, not a baccalaureate)</li>
+                                    <li>I have a degree-equivalent certification in Telugu (2015)</li>
                                     <li>I am a 2nd degree black belt in Taekwondo</li>
                                     <li>
                                         I've attended over 10 hackathons since early 2019. Learn
@@ -231,9 +231,7 @@ export default () => {
                                         }}
                                     >
                                         Pradyun#9732
-                                    </span>
-                                    . Otherwise, I can be found lurking the depths of the Hack
-                                    Club Slack :P
+                                    </span>.
                                 </p>
                             </div>
                         </div>
@@ -572,7 +570,7 @@ export default () => {
 
           .blurb-3 {
             position: absolute;
-            top: 105px;
+            top: 135px;
             left: 1010px;
             width: 100%;
           }
@@ -655,9 +653,9 @@ export default () => {
         @media (min-width: 750px) {
           .box-3 {
             width: 480px;
-            height: 150px;
+            height: 120px;
 
-            top: 100px;
+            top: 125px;
             left: 2475px;
           }
         }
@@ -665,9 +663,9 @@ export default () => {
         @media (max-width: 750px) {
           .box-3 {
             width: 280px;
-            height: 200px;
+            height: 120px;
 
-            top: 165px;
+            top: 195px;
             left: 960px;
           }
         }
@@ -690,7 +688,7 @@ export default () => {
             width: 480px;
             height: 50px;
 
-            top: 275px;
+            top: 260px;
             left: 2475px;
           }
         }
@@ -700,7 +698,7 @@ export default () => {
             width: 280px;
             height: 50px;
 
-            top: 375px;
+            top: 330px;
             left: 960px;
           }
         }
