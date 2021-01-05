@@ -6,21 +6,21 @@ import Container from '../../componenets/Container'
 function blog(props) {
     return(
         <Container siteTitle="Notebook" description="Basically my version of a blog - except I'm not lazy enough to use wordpress. I write about a variety of topic, primarily revolving around the tech space.">
-            <h1 style={{color: "#8aac8b"}}>Notebook</h1>
+            <h1 style={{color: "#c6a679"}}>Notebook</h1>
             <p>This is basically my version of a blog - except I'm not lazy enough to use wordpress. I tend to write all kinds of things - ethics, technology, keyboards, linux - whatever interests me at the moment :)</p>
             <div className="fatline"></div>
             <div className='list'>
                 {props.posts.map(post => (
                     <Link href={"/blog/"+post.slug}>
-                        <a className="pcont invisible">
+                    <a className={"pcont invisible "+post.document.data.color}>
                             <div className="pcn">
                                 <div className="phead">
-                                <h3>{post.document.data.title}</h3>
-                                <h4>{post.document.data.date}</h4>
+                                    <h3>{post.document.data.title}</h3>
+                                    <h4>{post.document.data.date}</h4>
                                 </div>
-                            <div className="smoline"></div>
-                            <p>{post.document.data.blurb}</p>
-                            </div>
+                                <div className="smoline"></div>
+                                    <p>{post.document.data.blurb}</p>
+                                </div>
                         </a>
                     </Link>
                 ))}
@@ -50,7 +50,6 @@ function blog(props) {
 
                 .pcont {
                     background-color: #0f0f0f;
-                    border-radius: 4px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -61,8 +60,8 @@ function blog(props) {
                 }
 
                 .pcont:hover {
-                    background-color: #050505;
-                    border: 3px solid #ac8a8c;
+                    transform: translate(-5px, -5px);
+                    box-shadow: 5px 5px #262626;
                     text-decoration: none;
                 }
 
@@ -107,6 +106,41 @@ function blog(props) {
                     background-color: #f8f8f2;
                     margin-bottom: 20px;
                 }
+.cyan:hover{
+    background: #8aabac;
+    border-color: #8aabac;
+}
+
+.red:hover{
+    background: #ac8a8c;
+    border-color: #ac8a8c;
+}
+
+.yellow:hover{
+    background: #aca98a;
+    border-color: #aca98a;
+}
+
+.magenta:hover{
+    background: #ac8aac;
+    border-color: #ac8aac;
+}
+
+.green:hover{
+    background: #8baa8c;
+    border-color: #8baa8c;
+}
+
+.orange:hover{
+    background: #c6a679;
+    border-color: #c6a679;
+}
+
+.purple:hover{
+    backgound: #8f8aac;
+    border-color: #8f8aac;
+}
+
             `} </style>
         </Container>
 )

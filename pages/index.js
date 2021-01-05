@@ -65,12 +65,12 @@ export default () => {
                                     href="https://www.facebook.com/profile.php?id=100009257228843"
                                     className="invisible"
                                 >
-                                    <div className="social">
+                                    <div className="social social1">
                                         <FaFacebookF size="12px" className="icon" />
                                     </div>
                                 </a>
                                 <a href="https://github.com/pradyungn" className="invisible">
-                                    <div className="social">
+                                    <div className="social social2">
                                         <FaGithubAlt size="12px" className="icon" />
                                     </div>
                                 </a>
@@ -78,12 +78,12 @@ export default () => {
                                     href="https://www.linkedin.com/in/pradyun-n-958499b8/"
                                     className="invisible"
                                 >
-                                    <div className="social">
+                                    <div className="social social3">
                                         <FaLinkedinIn size="12px" className="icon" />
                                     </div>
                                 </a>
                                 <a href="https://twitter.com/pradyungn" className="invisible">
-                                    <div className="social">
+                                    <div className="social social4">
                                         <FaTwitter size="12px" className="icon" />
                                     </div>
                                 </a>
@@ -115,19 +115,19 @@ export default () => {
 
                             <div className="buttons">
                                 <Link href="/blog">
-                                    <a className="button invisible bgap">
+                                    <a className="button button1 invisible bgap">
                                         <div className="btext">Blog</div>
                                     </a>
                                 </Link>
 
                                 <Link href="/docs">
-                                    <a className="button bgap invisible">
+                                    <a className="button button2 bgap invisible">
                                         <div className="btext">Docs</div>
                                     </a>
                                 </Link>
 
                                 <Link href="/portfolio">
-                                    <a className="button invisible">
+                                    <a className="button button3 invisible">
                                         <div className="btext">Projects</div>
                                     </a>
                                 </Link>
@@ -272,11 +272,10 @@ export default () => {
         .social {
           background: #262626;
 
-          height: 20px;
-          width: 20px;
+          height: 25px;
+          width: 25px;
 
-          border: 1.5px solid #aca98a;
-          border-radius: 10.5px;
+          border-radius: 12.5px;
 
           display: flex;
           justify-content: center;
@@ -286,8 +285,24 @@ export default () => {
         }
 
         .social:hover {
-          background: #0f0f0f;
-          border-color: #8f8aac;
+          transform: translate(-2.5px, -2.5px);
+        }
+
+        .social1:hover {
+            background: #c6a679;
+        }
+
+        .social2:hover {
+            background: #aca98a;
+        }
+
+        .social3:hover {
+            background: #8f8aac;
+        }
+
+        
+        .social4:hover {
+            background: #8baa8c;
         }
 
         .me {
@@ -398,6 +413,30 @@ export default () => {
           justify-content: center;
         }
 
+        .button1 {
+            border: 2.25px solid #c6a679; 
+        }
+
+        .button1:hover {
+            background: #c6a679;
+        }
+
+        .button2 {
+            border: 2.25px solid #aca98a; 
+        }
+
+        .button2:hover {
+            background: #aca98a;
+        }
+
+        .button3 {
+            border: 2.25px solid #8f8aac; 
+        }
+
+        .button3:hover {
+            background: #8f8aac;
+        }
+
         @media (min-width: 750px) {
           .buttons {
             width: 110px;
@@ -420,7 +459,6 @@ export default () => {
           width: 100%;
 
           background: #0f0f0f;
-          border: 2.25px solid #8f8aac;
           box-sizing: border-box;
 
           display: flex;
@@ -444,8 +482,8 @@ export default () => {
         }
 
         .button:hover {
-          background: #050505;
-          border-color: #8aabac;
+            transform: translate(-5px, -5px);
+            box-shadow: 5px 5px #262626;
         }
 
         .btext {

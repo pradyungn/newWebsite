@@ -1,7 +1,7 @@
 ---
 title: To Linux or not to Linux...
 color: yellow
-date: 4/7/2020
+date: 5/28/2020
 blurb: Linux isn't for everyone... but maybe it's for you?
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Your First (good) VimRC
 color: green
-date: 4/7/2020
+date: 7/1/2020
 blurb: Vim isn't meant to be a full-time development environment out of box... so let's make it one.
 ---
 
