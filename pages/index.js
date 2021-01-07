@@ -286,6 +286,7 @@ export default () => {
 
         .social:hover {
           transform: translate(-2.5px, -2.5px);
+          box-shadow: 2.5px 2.5px #262626;
         }
 
         .social1:hover {
