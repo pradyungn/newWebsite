@@ -230,7 +230,7 @@ export default () => {
                                             fontStyle: "italic",
                                         }}
                                     >
-                                        Pradyun#9732
+                                        pradyun#9732
                                     </span>.
                                 </p>
                             </div>
