@@ -195,7 +195,6 @@ export default () => {
                                         !
                                     </li>
                                     <li>I have a degree-equivalent certification in Telugu (2015)</li>
-                                    <li>I am a 2nd degree black belt in Taekwondo</li>
                                     <li>
                                         I've attended over 10 hackathons since early 2019. Learn
                                         more{" "}
