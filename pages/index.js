@@ -18,14 +18,31 @@ import Head from "next/head";
 import Typist from "react-typist";
 import TypistLoop from "react-typist-loop";
 
+export default () => {
+    const [num, setNum] = useState(0);
+
+    function Slide(props) {
+        return <div className="slide">{props.children}</div>;
+    }
+
+    function Jump({ lnum }) {
+        return (
+            <a
+                className={num === lnum ? "jump-active" : "jump"}
+                href="#"
+                onClick={() => setNum(lnum)}
+            ></a>
+        );
+    }
+
     return (
         <main>
             <Head>
                 <title>pradyungn</title>
-                <meta name="description" content="Maker of things, engineering afficonado." />
+                <meta name="description" content="Thinker. Developer. Innovator." />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="og:title" content="pradyungn" />
-                <meta name="og:description" content="Maker of things, engineering afficonado." />
+                <meta name="og:description" content="Thinker. Developer. Innovator." />
                 <meta
                     name="og:image"
                     content="https://new-website.pradyungn.now.sh/static/me.jpg"
@@ -203,7 +220,7 @@ import TypistLoop from "react-typist-loop";
                                 <p>
                                     I love meeting new people! Want to talk 1 on 1? Feel free to
                                     reach out to me at{" "}
-                                    <a href="mailto:pradyungn@gmail.com">pradyungn@gmail.com</a>{" "}
+                                    <a href="mailto:me@pradyungn.tech">me@pradyungn.tech</a>{" "}
                                     or hit up my discord at{" "}
                                     <span
                                         style={{
