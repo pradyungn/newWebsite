@@ -24,7 +24,7 @@ export default () => {
                 Portfolio
             </h1>
             <p>
-                A conveniently organized list of all of my major projects! I tend to update this list <i>after</i> I've completed new projects, so this list may not alwayas be up-to-date. Feel free to <a href="mailto:me@pradyungn.tech">contact me</a> if you want to follow up on, or inquire about any of these projects.
+                A conveniently organized list of all of my major projects! I tend to update this list <i>after</i> I've completed new projects, so this list may not alwayas be up-to-date. Feel free to <a href="mailto:pradyungn@gmail.com">contact me</a> if you want to follow up on, or inquire about any of these projects.
             </p>
 
             <Item>

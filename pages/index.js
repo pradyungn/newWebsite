@@ -1,6 +1,6 @@
 //  ____  _   _
 // |  _ \| \ | | Pradyun Narkadamilli
-// | |_) |  \| | https://pradyungn.tech
+// | |_) |  \| | https://pradyun.tech
 // |  __/| |\  | MIT License
 // |_|   |_| \_| Copyright 2020 Pradyun Narkadamilli
 
@@ -39,10 +39,10 @@ export default () => {
         <main>
             <Head>
                 <title>pradyungn</title>
-                <meta name="description" content="Thinker. Developer. Innovator." />
+                <meta name="description" content="Maker of things. Engineering afficionado." />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="og:title" content="pradyungn" />
-                <meta name="og:description" content="Thinker. Developer. Innovator." />
+                <meta name="og:description" content="Maker of things. Engineering afficionado." />
                 <meta
                     name="og:image"
                     content="https://new-website.pradyungn.now.sh/static/me.jpg"
@@ -220,7 +220,7 @@ export default () => {
                                 <p>
                                     I love meeting new people! Want to talk 1 on 1? Feel free to
                                     reach out to me at{" "}
-                                    <a href="mailto:me@pradyungn.tech">me@pradyungn.tech</a>{" "}
+                                    <a href="mailto:pradyungn@gmail.com">pradyungn@gmail.com</a>{" "}
                                     or hit up my discord at{" "}
                                     <span
                                         style={{
