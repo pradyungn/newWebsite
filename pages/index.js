@@ -144,7 +144,7 @@ export default () => {
                         <div className="box-1">
                             <div className="boxtext">
                                 <p>
-                                    I'm a Senior at Dougherty Valley High School, and I'll be matriculating into UIUC's ECE Department in the Fall!
+                                    I'm a freshman at UIUC, matriculating into their ECE Department in the Fall!
                                     I'm passionate about making things for the sake of making things - be that as a solution, a hobby, or else.
                                 </p>
                                 <p>
