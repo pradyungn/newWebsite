@@ -38,7 +38,7 @@ export default () => {
     return (
         <main>
             <Head>
-                <title>pradyungn</title>
+                <title>pradyun</title>
                 <meta name="description" content="Maker of things. Engineering afficionado." />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="og:title" content="pradyungn" />
@@ -144,13 +144,14 @@ export default () => {
                         <div className="box-1">
                             <div className="boxtext">
                                 <p>
-                                    I'm a freshman at UIUC, matriculating into their ECE Department in the Fall!
+                                    I'm a freshman at UIUC, pursuing a B.E in Computer Engineering.
                                     I'm passionate about making things for the sake of making things - be that as a solution, a hobby, or else.
                                 </p>
                                 <p>
-                                    I'm a jack-of-all-trades, in the sense that I'm proficient with both hardware
-                                    and software. While my hardware experience is primarily centered around the implementation
-                                    and programming of microcontrollers, my software experience is more well-rounded.                                </p>
+                                    While my rapt fascination is held by autonomous robotics and their associated subfields, I'm still rather 
+                                    varied in my fields of interest. So far I've had the luxury of exploring full stack development, machine learning, IoT hardware development, and more -
+                                    I hope to only expand that list in the future at UIUC.
+                                </p>
                             </div>
                         </div>
                     </Slide>
@@ -162,7 +163,7 @@ export default () => {
                         <div className="box-2">
                             <div className="boxtext">
                                 <ul>
-                                    <li>I compete in VEX Robotics, on Team 3304R</li>
+                                    <li>I competed in VEX Robotics, captaining Team 3304R</li>
                                     <li>
                                         I've organized{" "}
                                         <a
@@ -194,10 +195,9 @@ export default () => {
                                         </Link>
                                         !
                                     </li>
-                                    <li>I have a degree-equivalent certification in Telugu (2015)</li>
                                     <li>
-                                        I've attended over 10 hackathons since early 2019. Learn
-                                        more{" "}
+                                        I'm an avid hackathon competitor and a loyal <a href="https://hackclub.com" style={{ color:"#ac8a8c" }}>Hack Club</a> member!
+                                        The fruit of my time in these groups can be viewed{" "}
                                         <Link href="/portfolio#hackathons">
                                             <a>here</a>
                                         </Link>
@@ -218,19 +218,8 @@ export default () => {
                         <div className="box-3">
                             <div className="boxtext">
                                 <p>
-                                    I love meeting new people! Want to talk 1 on 1? Feel free to
-                                    reach out to me at{" "}
-                                    <a href="mailto:pradyungn@gmail.com">pradyungn@gmail.com</a>{" "}
-                                    or hit up my discord at{" "}
-                                    <span
-                                        style={{
-                                            color: "#8aac8b",
-                                            fontWeight: 700,
-                                            fontStyle: "italic",
-                                        }}
-                                    >
-                                        pradyun#9732
-                                    </span>.
+                                    I love meeting new people! Want to talk 1 on 1? Feel free to reach out to me at{" "}
+                                    <a href="mailto:pradyun2@illinois.edu">pradyun2@illinois.edu</a>.
                                 </p>
                             </div>
                         </div>
@@ -251,9 +240,11 @@ export default () => {
 
             <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
         body,
         html {
-          font-family: "Roboto Condensed", sans-serif;
+          font-family: "Lora", sans-serif;
           font-weight: 400;
           height: 100%;
           background-color: #0f0f0f;
@@ -746,6 +737,10 @@ export default () => {
             width: 430px;
             font-size: 18px;
           }
+
+        .box-1 > .boxtext{
+            font-size: 16px;
+        }
         }
 
         @media (max-width: 750px) {

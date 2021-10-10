@@ -74,7 +74,7 @@ export default () => {
 
             <Item>
                 <h3 style={{color: "#aca98a"}}>VR Mission Control</h3>
-                <p>Our submission to LAHacks 2019. Armed with the power of an Oculus Rift (Thanks <span style={{fontWeight:700}}><span style={{color:"#ff5555"}}>M</span ><span style={{color:"#f1fa8c"}}>L</span><span style={{color:"#8be9fd"}}>H</span></span> :P), we sought to create an effective interface for the onboard camera feed of our Raspberry Pi IoT Drone.  However this project soon evolved into something different - we essentially made an interface that had an infinite number of virtual monitors. Therefore within the simulation, you could have say a 4 monitor setup and use that, even if in reality you had one monitor.</p>
+                <p>Our submission to LAHacks 2019. Using an MLH-provided Oculus Rift, we sought to create an effective interface for the onboard camera feed of our Raspberry Pi IoT Drone.  However this project soon evolved into something different - we made an MR interface that courd generate an infinite number of virtual monitors (barring any computational constraints). Therefore within the simulation, you could virtualize 4 or 8 monitors even if in reality you had limited screen real estate. We saw this being applicable in high-information work environments - one exmaple being a NASA Mission Control (get it?).</p>
                 <ul>
                         <li>
                             We used Unity to create a virtual dashboard of sorts - one with an array of panes that one could see (in theory) different video feeds on.
@@ -105,7 +105,8 @@ export default () => {
             </Item>
 
             <Item>
-                <h3>More writeups coming soon! This site is still in development :P</h3>
+                <h3>More writeups in the future!</h3>
+                <p>I'm sill learning, absorbing, and making as much as I can. I'll try to document writeups of some of my projects in the meantime!</p>
             </Item>
 
         </Container>

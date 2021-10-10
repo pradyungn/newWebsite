@@ -8,9 +8,8 @@ export default () => {
             <p>Any documents that I find worth publishing, I guess? This will get updated with project documentation and such, as time goes on.</p>
             <ul style={{height: "65vh"}}>
                 <li><a href="/static/Resume.pdf">resume</a></li>
-                <li><a href="/static/CL.pdf">cover letter</a></li>
                 <li><a href="/static/3304R_Notebok_TTEarly.pdf">robotics notebook - 19/20 early season</a></li>
-                <li>that's it for now? i'll add robotics writeups and some essays here in the future :)</li>
+                <li>There isn't much here right now... I'll try to add more things as they become relevant!</li>
             </ul>
         </Container>
     )
