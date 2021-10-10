@@ -166,7 +166,7 @@ export default () => {
                                         I've organized{" "}
                                         <a
                                             href="https://www.launchhacks.tech"
-                                            style={{ color: "#aca98a" }}
+                                            style={{ color: "#8a98ac" }}
                                         >
                                             LaunchHacks
                                         </a>
@@ -237,7 +237,6 @@ export default () => {
             </div>
 
             <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
         body,
