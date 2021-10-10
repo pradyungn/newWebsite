@@ -41,7 +41,7 @@ export default () => {
                 <title>pradyun</title>
                 <meta name="description" content="Maker of things. Engineering afficionado." />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta name="og:title" content="pradyungn" />
+                <meta name="og:title" content="pradyun" />
                 <meta name="og:description" content="Maker of things. Engineering afficionado." />
                 <meta
                     name="og:image"
