@@ -136,10 +136,8 @@ export default () => {
                     </Slide>
 
                     <Slide>
-                        <div className="blurb-1">
-                            <div className="huge">
-                                <b>Hi! I'm Pradyun!</b>
-                            </div>
+                        <div className="blurb-1 huge">
+                            <b>Hi! I'm Pradyun!</b>
                         </div>
                         <div className="box-1">
                             <div className="boxtext">
@@ -566,7 +564,7 @@ export default () => {
           .blurb-1 {
             position: absolute;
             top: 165px;
-            left: 805px;
+            left: 790px;
           }
 
           .blurb-2 {
@@ -586,7 +584,7 @@ export default () => {
           .blurb-1 {
             position: absolute;
             top: 30px;
-            left: 350px;
+            left: 335px;
             width: 100%;
           }
 
