@@ -75,7 +75,7 @@ export default () => {
                                     </div>
                                 </a>
                                 <a
-                                    href="https://www.linkedin.com/in/pradyun-n-958499b8/"
+                                    href="https://www.linkedin.com/in/pradyun/"
                                     className="invisible"
                                 >
                                     <div className="social social3">
