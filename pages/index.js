@@ -128,7 +128,7 @@ export default () => {
 
                                 <Link href="/portfolio">
                                     <a className="button button3 invisible">
-                                        <div className="btext">Projects</div>
+                                        <div className="btext">Portfolio</div>
                                     </a>
                                 </Link>
                             </div>
